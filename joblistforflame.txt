@@ -1,0 +1,618 @@
+TEAM_CC = DarkRP.createJob("Clone Cadet", {
+    color = Color(255, 255, 255, 255),
+    model = {“models/player/clone/baldcadet.mdl”},
+    description = [[You are a recruit for the 101st regiment!]],
+    weapons = {"tfa_dc15a_expanded", "tfa_752_dc15s_expanded", "tfa_swch_dc17"},
+    command = "cc",
+    max = 0,
+    salary = 25,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    category = "101st Regiment",
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(100)
+        ply:SetHealth(100)
+        ply:SetArmor(50)
+    end
+})
+
+TEAM_CT = DarkRP.createJob("Clone Trooper", {
+    color = Color(255, 255, 255, 255),
+    model = {"models/reizer_cgi_p2/clone_trp/clone_trp.mdl"},
+    description = [[You are a Clone Trooper for the 101st regiment!]],
+    weapons = {"tfa_dc15a_expanded", "tfa_752_dc15s_expanded", "tfa_swch_dc17"},
+    command = "ct",
+    max = 0,
+    salary = 30,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    category = "101st Regiment",
+    ammo = {
+        ["ar2"] = 1500
+    },
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(100)
+        ply:SetHealth(100)
+        ply:SetArmor(50)
+    end
+})
+
+TEAM_101H = DarkRP.createJob("101st Heavy", {
+    color = Color(255, 255, 255, 255),
+    model = {"models/reizer_cgi_p2/clone_lt/clone_lt.mdl"},
+    description = [[You are a Heavy Trooper for the 101st regiment!]],
+    weapons = {"tfa_swch_z6", "tfa_752_dc15s_expanded"},
+    command = "101h",
+    max = 5,
+    salary = 30,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    category = "101st Regiment",
+    ammo = {
+        ["ar2"] = 1500
+    },
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(125)
+        ply:SetHealth(125)
+        ply:SetArmor(75)
+    end
+})
+
+TEAM_101CM = DarkRP.createJob("101st Combat Medic", {
+    color = Color(255, 255, 255, 255),
+    model = {"models/reizer_cgi_p2/clone_med/clone_med.mdl"},
+    description = [[You are a Combat Medic for the 101st regiment!]],
+    weapons = {"weapon_bactanade", "weapon_bactainjector", "tfa_dc15a_expanded"},
+    command = "101cm",
+    max = 5,
+    salary = 30,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    category = "101st Regiment",
+    ammo = {
+        ["ar2"] = 1500
+    },
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(100)
+        ply:SetHealth(100)
+        ply:SetArmor(50)
+    end
+})
+
+TEAM_101P = DarkRP.createJob("101st Pilot", {
+    color = Color(255, 255, 255, 255),
+    model = {"models/reizer_cgi_p2/clone_pilot/clone_pilot.mdl"},
+    description = [[You are a Pilot for the 101st regiment!]],
+    weapons = {"tfa_dc15a_expanded", "tfa_swch_dc17"},
+    command = "101p",
+    max = 5,
+    salary = 30,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    category = "101st Regiment",
+    ammo = {
+        ["ar2"] = 1500
+    },
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(100)
+        ply:SetHealth(100)
+        ply:SetArmor(50)
+    end
+})
+
+TEAM_101A = DarkRP.createJob("101st ARF Trooper", {
+    color = Color(255, 255, 255, 255),
+    model = {"models/reizer_cgi_p2/clone_arf/clone_arf.mdl"},
+    description = [[You are a ARF Trooper for the 101st regiment!]],
+    weapons = {"tfa_sw_repsnip", "tfa_swch_clonelauncher", "tfa_swch_alphablaster"},
+    command = "101a",
+    max = 5,
+    salary = 30,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    category = "101st Regiment",
+    ammo = {
+        ["ar2"] = 1500
+    },
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(125)
+        ply:SetHealth(125)
+        ply:SetArmor(75)
+    end
+})
+
+TEAM_101JT = DarkRP.createJob("101st Jet Trooper", {
+    color = Color(255, 255, 255, 255),
+    model = {"models/reizer_cgi_p2/clone_jet/clone_jet.mdl"},
+    description = [[You are a Jet Trooper for the 101st regiment!]],
+    weapons = {"wt_rocketback", "tfa_sw_repshot", "tfa_dc15a_expanded"},
+    command = "101jt",
+    max = 5,
+    salary = 30,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    category = "101st Regiment",
+    ammo = {
+        ["ar2"] = 1500
+    },
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(100)
+        ply:SetHealth(100)
+        ply:SetArmor(75)
+    end
+})
+
+TEAM_101O = DarkRP.createJob("101st Officer", {
+    color = Color(255, 255, 255, 255),
+    model = {"models/reizer_cgi_p2/clone_cpt/clone_cpt.mdl"},
+    description = [[You are a Officer for the 101st regiment!]],
+    weapons = {"tfa_sw_dc17dual", "tfa_sw_repshot", "tfa_swch_alphablaster"},
+    command = "101o",
+    max = 5,
+    salary = 30,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    category = "101st Regiment",
+    ammo = {
+        ["ar2"] = 1500
+    },
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(100)
+        ply:SetHealth(100)
+        ply:SetArmor(75)
+    end
+})
+
+TEAM_101CMD = DarkRP.createJob("101st Commander", {
+    color = Color(255, 255, 255, 255),
+    model = {"models/reizer_cgi_p2/clone_cmd/clone_cmd.mdl"},
+    description = [[You are a Commander for the 101st regiment!]],
+    weapons = {"tfa_sw_dc17dual", "tfa_sw_repshot", "tfa_swch_alphablaster"},
+    command = "101cmd",
+    max = 1,
+    salary = 30,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    category = "101st Regiment",
+    ammo = {
+        ["ar2"] = 1500
+    },
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(150)
+        ply:SetHealth(150)
+        ply:SetArmor(100)
+    end
+})
+
+TEAM_104T = DarkRP.createJob("104th Trooper", {
+    color = Color(110, 110, 110, 255),
+    model = {"models/reizer_cgi_p2/104_trp/104_trp.mdl"},
+    description = [[You are a trooper for the 104th regiment!]],
+    weapons = {"tfa_752_dc15s_expanded", "tfa_swch_dc17"},
+    command = "104t",
+    max = 10,
+    salary = 30,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    category = "104th Battalion",
+    ammo = {
+        ["ar2"] = 1500
+    },
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(125)
+        ply:SetHealth(125)
+        ply:SetArmor(75)
+    end
+})
+
+TEAM_104P = DarkRP.createJob("104th Pilot", {
+    color = Color(110, 110, 110, 255),
+    model = {"models/reizer_cgi_p2/104_pilot/104_pilot.mdl"},
+    description = [[You are a pilot for the 104th regiment!]],
+    weapons = {"tfa_752_dc15s_expanded", "tfa_swch_dc17", "tfa_dc15a_expanded"},
+    command = "104p",
+    max = 10,
+    salary = 30,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    category = "104th Battalion",
+    ammo = {
+        ["ar2"] = 1500
+    },
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(125)
+        ply:SetHealth(125)
+        ply:SetArmor(75)
+    end
+})
+
+TEAM_104H = DarkRP.createJob("104th Heavy", {
+    color = Color(110, 110, 110, 255),
+    model = {"models/reizer_cgi_p2/104_assault/104_assault.mdl"},
+    description = [[You are a heavy for the 104th regiment!]],
+    weapons = {"tfa_swch_dc17", "tfa_dc15a_expanded", "tfa_swch_z6"},
+    command = "104h",
+    max = 10,
+    salary = 30,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    category = "104th Battalion",
+    ammo = {
+        ["ar2"] = 1500
+    },
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(125)
+        ply:SetHealth(125)
+        ply:SetArmor(100)
+    end
+})
+
+TEAM_104CM = DarkRP.createJob("104th Combat Medic", {
+    color = Color(110, 110, 110, 255),
+    model = {"models/reizer_cgi_p2/104_med/104_med.mdl"},
+    description = [[You are a Combat Medic for the 104th regiment!]],
+    weapons = {"tfa_swch_dc17", "tfa_dc15a_expanded", "weapon_bactanade", "weapon_bactainjector"},
+    command = "104cm",
+    max = 10,
+    salary = 30,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    category = "104th Battalion",
+    ammo = {
+        ["ar2"] = 1500
+    },
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(100)
+        ply:SetHealth(100)
+        ply:SetArmor(75)
+    end
+})
+
+TEAM_104ARF = DarkRP.createJob("104th ARF Trooper", {
+    color = Color(110, 110, 110, 255),
+    model = {"models/reizer_cgi_p2/104_arf/104_arf.mdl"},
+    description = [[You are a ARF Trooper for the 104th regiment!]],
+    weapons = {"tfa_sw_repsnip", "tfa_swch_clonelauncher", "tfa_swch_alphablaster"},
+    command = "104arf",
+    max = 10,
+    salary = 30,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    category = "104th Battalion",
+    ammo = {
+        ["ar2"] = 1500
+    },
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(100)
+        ply:SetHealth(100)
+        ply:SetArmor(75)
+    end
+})
+
+TEAM_104ARC = DarkRP.createJob("104th ARC Trooper", {
+    color = Color(110, 110, 110, 255),
+    model = {"models/reizer_cgi_p2/104_arc/104_arc.mdl"},
+    description = [[You are a ARC Trooper for the 104th regiment!]],
+    weapons = {"tfa_sw_repsnip", "tfa_swch_clonelauncher", "tfa_swch_alphablaster"},
+    command = "104arc",
+    max = 10,
+    salary = 30,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    category = "104th Battalion",
+    ammo = {
+        ["ar2"] = 1500
+    },
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(125)
+        ply:SetHealth(125)
+        ply:SetArmor(100)
+    end
+})
+
+TEAM_104O = DarkRP.createJob("104th Officer", {
+    color = Color(110, 110, 110, 255),
+    model = {"models/reizer_cgi_p2/104_col/104_col.mdl"},
+    description = [[You are a Officer for the 104th regiment!]],
+    weapons = {"tfa_sw_dc17dual", "tfa_sw_repshot", "tfa_swch_alphablaster"},
+    command = "104o",
+    max = 5,
+    salary = 30,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    category = "104th Battalion",
+    ammo = {
+        ["ar2"] = 1500
+    },
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(125)
+        ply:SetHealth(125)
+        ply:SetArmor(100)
+    end
+})
+
+TEAM_104CMD = DarkRP.createJob("104th Commander Wolffe", {
+    color = Color(110, 110, 110, 255),
+    model = {"models/reizer_cgi_p2/104_wolf/104_wolf.mdl"},
+    description = [[You are Commander Wolffe of the 104th regiment! (Wolffe is in charge of Wolfpack as well.)]],
+    weapons = {"tfa_sw_dc17dual", "tfa_sw_repshot", "tfa_swch_alphablaster"},
+    command = "104cmd",
+    max = 1,
+    salary = 30,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    category = "104th Battalion",
+    ammo = {
+        ["ar2"] = 1500
+    },
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(150)
+        ply:SetHealth(150)
+        ply:SetArmor(100)
+    end
+})
+
+TEAM_212T = DarkRP.createJob("212th Trooper", {
+    color = Color(255, 153, 0, 255),
+    model = {"models/reizer_cgi_p2/212_trp/212_trp.mdl"},
+    description = [[You are a trooper of the 212th Attack Battalion!]],
+    weapons = {"tfa_dc15a_expanded", "tfa_752_dc15s_expanded", "tfa_swch_dc17"},
+    command = "212t",
+    max = 10,
+    salary = 30,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    category = "212th Attack Battalion”,
+    ammo = {
+        ["ar2"] = 1500
+    },
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(100)
+        ply:SetHealth(100)
+        ply:SetArmor(75)
+    end
+})
+
+TEAM_212P = DarkRP.createJob("212th Pilot", {
+    color = Color(255, 153, 0, 255),
+    model = {"models/reizer_cgi_p2/212_pilot/212_pilot.mdl"},
+    description = [[You are a pilot of the 212th Star Corps!]],
+    weapons = {"tfa_dc15a_expanded", "tfa_752_dc15s_expanded", "tfa_swch_dc17"},
+    command = "212p",
+    max = 10,
+    salary = 30,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    category = "212th Attack Battalion”,
+    ammo = {
+        ["ar2"] = 1500
+    },
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(100)
+        ply:SetHealth(100)
+        ply:SetArmor(75)
+    end
+})
+
+TEAM_212CM = DarkRP.createJob("212th Combat Medic", {
+    color = Color(255, 153, 0, 255),
+    model = {"models/reizer_cgi_p2/212_med/212_med.mdl"},
+    description = [[You are a Combat Medic of the 212th Attack Battalion!]],
+    weapons = {"tfa_dc15a_expanded", "weapon_bactanade", "weapon_bactainjector"},
+    command = "212cm",
+    max = 10,
+    salary = 30,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    category = "212th Attack Battalion”,
+    ammo = {
+        ["ar2"] = 1500
+    },
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(100)
+        ply:SetHealth(100)
+        ply:SetArmor(75)
+    end
+})
+
+TEAM_212JT = DarkRP.createJob("212th Jet Trooper", {
+    color = Color(255, 153, 0, 255),
+    model = {"models/reizer_cgi_p2/212_jet/212_jet.mdl"},
+    description = [[You are a Jet Trooper of the 212th Attack Battalion!]],
+    weapons = {"wt_rocketback", "tfa_sw_repshot", "tfa_dc15a_expanded"},
+    command = "212jt",
+    max = 10,
+    salary = 30,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    category = "212th Attack Battalion”,
+    ammo = {
+        ["ar2"] = 1500
+    },
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(100)
+        ply:SetHealth(100)
+        ply:SetArmor(75)
+    end
+})
+
+TEAM_212ARC = DarkRP.createJob("212th ARC Trooper", {
+    color = Color(255, 153, 0, 255),
+    model = {"models/reizer_cgi_p2/212_arc/212_arc.mdl"},
+    description = [[You are a ARC Trooper of the 212th Attack Battalion!]],
+    weapons = {"tfa_sw_repsnip", "tfa_swch_clonelauncher", "tfa_swch_alphablaster"},
+    command = "212arc",
+    max = 10,
+    salary = 30,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    category = "212th Attack Battalion”,
+    ammo = {
+        ["ar2"] = 1500
+    },
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(125)
+        ply:SetHealth(125)
+        ply:SetArmor(100)
+    end
+})
+
+TEAM_212H = DarkRP.createJob("212th Heavy Trooper", {
+    color = Color(255, 153, 0, 255),
+    model = {"models/reizer_cgi_p2/212_assault/212_assault.mdl"},
+    description = [[You are a Heavy Trooper of the 212th Attack Battalion!]],
+    weapons = {"tfa_swch_z6", "tfa_swch_dc17", "tfa_dc15a_expanded"},
+    command = "212h",
+    max = 10,
+    salary = 30,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    category = "212th Attack Battalion”,
+    ammo = {
+        ["ar2"] = 1500
+    },
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(125)
+        ply:SetHealth(125)
+        ply:SetArmor(100)
+    end
+})
+
+TEAM_212O = DarkRP.createJob("212th Officer", {
+    color = Color(255, 153, 0, 255),
+    model = {"models/reizer_cgi_p2/212_col/212_col.mdl"},
+    description = [[You are a officer of the 212th Attack Battalion!]],
+    weapons = {"tfa_sw_dc17dual", "tfa_sw_repshot", "tfa_swch_alphablaster"},
+    command = "212o",
+    max = 5,
+    salary = 30,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    category = "212th Attack Battalion”,
+    ammo = {
+        ["ar2"] = 1500
+    },
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(150)
+        ply:SetHealth(150)
+        ply:SetArmor(100)
+    end
+})
+
+TEAM_212CMD = DarkRP.createJob("212th Commander Cody", {
+    color = Color(255, 153, 0, 255),
+    model = {"models/reizer_cgi_p2/212_cody/212_cody.mdl"},
+    description = [[You are Commander Cody of the 212th Attack Battalion! (Cody is also in charge of 2nd Airborne)]],
+    weapons = {"tfa_sw_dc17dual", "tfa_sw_repshot", "tfa_swch_alphablaster"},
+    command = "212cmd",
+    max = 1,
+    salary = 30,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    category = "212th Attack Battalion”,
+    ammo = {
+        ["ar2"] = 1500
+    },
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(150)
+        ply:SetHealth(150)
+        ply:SetArmor(100)
+    end
+})
+
+TEAM_327T = DarkRP.createJob("327th Trooper", {
+    color = Color(181, 111, 0, 255),
+    model = {"models/reizer_cgi_p2/327_trp2/327_trp2.mdl"},
+    description = [[You are a trooper of the 327th Star Corps!]],
+    weapons = {"tfa_dc15a_expanded", "tfa_752_dc15s_expanded", "tfa_swch_dc17"},
+    command = "327t",
+    max = 10,
+    salary = 30,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    category = "327th Star Corps",
+    ammo = {
+        ["ar2"] = 1500
+    },
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(100)
+        ply:SetHealth(100)
+        ply:SetArmor(75)
+    end
+})
+
+TEAM_327CM = DarkRP.createJob("327th Combat Medic", {
+    color = Color(181, 111, 0, 255),
+    model = {"models/reizer_cgi_p2/327_med/327_med.mdl"},
+    description = [[You are a Combat Medic of the 327th Star Corps!]],
+    weapons = {"tfa_swch_dc17", "tfa_dc15a_expanded", "weapon_bactainjector", "weapon_bactanade"},
+    command = "327cm",
+    max = 10,
+    salary = 30,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    category = "327th Star Corps",
+    ammo = {
+        ["ar2"] = 1500
+    },
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(100)
+        ply:SetHealth(100)
+        ply:SetArmor(75)
+    end
+})
+
